@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+
+
+}
+  
+  var kmComGasolina = 16
+
+  var kmComAlcool = 11
+
+  var kmRodados = prompt("Informe quantos km são até seu destino");
+  var CalculoKmRodadosGasolina = (kmRodados/kmComGasolina);
+  var CalculoKmRodadosAlcool = (kmRodados/kmComAlcool);
+
+
+mostra("Seu consumo com gasolina até seu destino é de: " + Math.round (CalculoKmRodadosGasolina) + " litros");
+
+mostra("Seu consumo com alcool até seu destino é de:  " + Math.round (CalculoKmRodadosAlcool) + " litros");
+
+
+</script>
